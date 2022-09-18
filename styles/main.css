@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:cute;
+    src: url(../fonts/girolight.otf)
+}
+
+/*
+GLOBALES
+*/
+
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*
+SECCION 1 - INICIO
+*/
+
+
+.header-flex{
+    width:100%;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bg-banner{
+    position:absolute;
+    width:100%;
+    height:95vh;
+    object-fit: cover;
+}
+
+.header-home{
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo{
+    width: 120px;
+    margin-left: 25px;
+}
+
+.burger{
+    width: 35px;
+    margin-right: 25px;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+    font-family:cute;
+    font-size: 1.9rem;
+}
+
+.btn-sendmail{
+    padding:10px 20px;
+    background-color: rgba(255, 0, 0, 0.505);
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.content-section-one{
+    width: 100%;
+    height: 410px;
+    margin-top:170px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.bg-one{
+    width: 90%;
+    position:absolute;
+    left:-45%;
+    animation: rotation 20s infinite linear;
+    animation-name: bgone;
+}
+
+@keyframes bgone {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+.info{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-bottom: 30px;
+}
+
+.tittle-stage{
+    font-family: cute;
+    font-size:2.2rem;
+    width: 50%;
+    margin-bottom:30px;
+}
+
+.dscrp{
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.content-section-two{
+    width: 100%;
+    height: 650px;
+    margin-top:140px;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.bg-sectwo{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:-50px;
+}
+
+.content-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-right: 50px;
+    position: relative;
+}
+
+.tittle-stage-two{
+    font-family: cute;
+    font-size:2.2rem;
+    width: 70%;
+    margin-bottom:30px;
+    text-align:right;
+}
+
+.dscrp{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.slider{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: auto;
+    position: relative;
+}
+
+::-webkit-scrollbar {display: none;}
+
+.btn-section-two{
+    position: absolute;
+    left: 35px;
+    top: 620px;
+    text-decoration: none;
+    color: white;
+    padding:10px 25px;
+    border: 1px solid rgb(0, 179, 255);
+    border-radius:10px;
+    font-size: 0.9rem;
+    background-color: rgb(0, 149, 255);
+}
+
+
+
+.box-item{
+    height: 280px;
+    min-width: 260px;
+    margin-left: 35px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align:left;
+}
+
+.item-name{
+    font-size:1.9rem;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: cute;
+}
+
+.text-item{
+    font-size:0.9rem;
+    width:70%;
+}
+
+.item-image{
+    height:100px;
+    margin-bottom: 30px;
+}
+
+.content-section-tre{
+    width: 100%;
+    height:550px;
+    margin-top:100px;
+    color: white;
+    position: relative;
+}
+
+.bg-tre{
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+    position: absolute;
+    margin-top:-85px;
+}
+
+.infosect{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-right: 35px;
+    position:relative;
+}
+
+
+
+.over-brands{
+    width: 100%;
+    height: 270px;
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: scroll;
+    position:relative;
+}
+
+.brand-image{
+    max-width: 230px;
+    height:250px;
+    border-radius:20px;
+    margin-left: 35px;
+    object-fit: cover;
+}
+
+.content-section-four{
+    width: 100%;
+    height: 400px;
+    margin-top:60px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tie{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-contact{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.title-sec{
+    font-family:cute;
+    font-size:2.4rem;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.text-sec.{
+    margin-bottom:10px;
+}
+
+.form{
+    background-color:rgba(0, 4, 49, 0.363);
+    height:50px;
+    width:90%;
+    border-radius:50px;
+    border: 1px solid rgb(0, 102, 254);
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.form::placeholder{
+    color: white;
+    font-size:0.8rem;
+    text-align: center;
+}
+
+.btn-sub{
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: rgb(0, 110, 255);
+    border: 1px solid rgb(0, 170, 254);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer{
+    width: 100%;
+    height:350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.footer-logos{
+    margin-top:25px;
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tittle-fut{
+    color: white;
+    font-size:0.9rem;
+    margin-top:45px;
+}
+
+.text-fut{
+    color: white;
+    font-size:0.8rem;
+    margin-top:15px;
+    border-bottom: 1px solid white;
+}
+
+.icon-fut{
+    width: 25px;
+}
