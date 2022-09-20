@@ -14,6 +14,11 @@
     src: url(../fonts/made.otf)
 }
 
+@font-face{
+    font-family:sharetech;
+    src: url(../fonts/sharetech.ttf)
+}
+
 /*
 GLOBALES
 */
@@ -26,6 +31,8 @@ GLOBALES
     font-family: Helvetica, Arial, sans-serif;
     position: relative;
 }
+
+
 
 /*
 SECCION 1 - INICIO
@@ -46,24 +53,24 @@ SECCION 1 - INICIO
     position:absolute;
     background-color: black;
     z-index: 1;
-    animation: 5s;
+    animation: 6s;
     animation-name: box;
-    opacity: 0;
+    top: -1000px;
 }
 
 
 @keyframes box {
     0% {
-        opacity: 1;
+        top: 0px;
     }
     20% {
-        opacity: 1;
+        top: 0px;
     }
     60% {
-        opacity: 1;
+        top: 0px;
     }
     100% {
-        opacity: 0;
+        top: -1000px;
     }
 }
 
@@ -80,9 +87,8 @@ SECCION 1 - INICIO
 .rocks{
     position: absolute;
     z-index: 1;
-    animation: 5s;
+    animation: 6s;
     animation-name: boxrocks;
-    opacity: 1;
 }
 
 @keyframes boxrocks {
@@ -100,11 +106,65 @@ SECCION 1 - INICIO
     }
 }
 
+.rockotin{
+    position: relative;
+    width: 45px;
+    right:120px;
+    top:-60px;
+    display: block;
+    animation: 7s infinite linear;
+    animation-name: rockotin;
+}
+
+@keyframes rockotin {
+    0% {
+        top:-60px;
+        transform: rotate(-100deg);
+    }
+
+    50% {
+        top:-90px;
+        transform: rotate(-70deg);
+    }
+
+    100% {
+        top:-60px;
+        transform: rotate(-100deg);
+    }
+}
+
+.rockin{
+    position: relative;
+    width: 50px;
+    left:140px;
+    top:160px;
+    display: block;
+    animation: 7s infinite linear;
+    animation-name: rockin;
+}
+
+@keyframes rockin {
+    0% {
+        top:160px;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        top:180px;
+        transform: rotate(60deg);
+    }
+
+    100% {
+        top:160px;
+        transform: rotate(90deg);
+    }
+}
+
 .rock{
     position: relative;
     width: 70px;
-    right:90px;
-    top:-40px;
+    right:50px;
+    top:-30px;
     animation: 7s infinite linear;
     animation-name: rocka;
     display: block;
@@ -112,24 +172,24 @@ SECCION 1 - INICIO
 
 @keyframes rocka {
     0% {
-        top:-40px;
-        transform: rotate(0deg)
+        top:-30px;
+        transform: rotate(0deg);
     }
 
     50% {
         top:-60px;
-        transform: rotate(-30deg)
+        transform: rotate(-30deg);
     }
 
     100% {
-        top:-40px;
-        transform: rotate(0deg)
+        top:-30px;
+        transform: rotate(0deg);
     }
 }
 
 .rockto{
     position: relative;
-    width: 80px;
+    width: 90px;
     left:100px;
     top: -130px;
     display: block;
@@ -140,53 +200,52 @@ SECCION 1 - INICIO
 @keyframes rockto {
     0% {
         top: -130px;
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 
     50% {
         top: -100px;
-        transform: rotate(30deg)
+        transform: rotate(30deg);
     }
 
     100% {
         top: -130px;
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 }
 
 .rocktre{
     position: relative;
-    width: 50px;
-    right:90px;
-    top: 40px;
+    width: 60px;
+    right:80px;
+    top: -5px;
     display: block;
     animation:7s infinite linear;
     animation-name:rocktre;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
 }
 
 @keyframes rocktre {
     0% {
-        top: 40px;
-        transform: rotate(180deg)
+        top: -5px;
+        transform: rotate(180deg);
     }
 
     50% {
-        top: 60px;
-        transform: rotate(150deg)
+        top: 25px;
+        transform: rotate(150deg);
     }
 
     100% {
-        top: 40px;
-        transform: rotate(180deg)
+        top: -5px;
+        transform: rotate(180deg);
     }
 }
 
 .rockfur{
     position: relative;
-    width: 50px;
-    left:120px;
-    top: 20px;
+    width: 40px;
+    left:100px;
     display: block;
     animation:7s infinite linear;
     animation-name:rockfur;
@@ -195,18 +254,18 @@ SECCION 1 - INICIO
 
 @keyframes rockfur {
     0% {
-        top: 20px;
-        transform: rotate(50deg)
+        top: -10px;
+        transform: rotate(50deg);
     }
 
     50% {
-        top:0px;
-        transform: rotate(90deg)
+        top:-40px;
+        transform: rotate(90deg);
     }
 
     100% {
-        top: 20px;
-        transform: rotate(50deg)
+        top: -10px;
+        transform: rotate(50deg);
     }
 }
 
@@ -226,8 +285,7 @@ SECCION 1 - INICIO
     align-items: center;
     justify-content: space-between;
     position: relative;
-    margin-top: 20px;
-    animation: 2s 3s;
+    animation: 5s 4s;
     animation-name: navheader;
 }
 
@@ -247,10 +305,14 @@ SECCION 1 - INICIO
     margin-left: 25px;
 }
 
+
+
 .burger{
-    width: 35px;
-    margin-right: 50px;
+    margin-right: 30px;
 }
+
+
+
 
 .text{
     color: white;
@@ -265,8 +327,8 @@ SECCION 1 - INICIO
 
 .text h1 {
     margin-bottom: 15px;
-    font-family:cute;
-    font-size: 2.7rem;
+    font-family:ShareTech;
+    font-size: 2.5rem;
     width: 70%;
 }
 
@@ -283,17 +345,7 @@ SECCION 1 - INICIO
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    animation:2s 3s;
-    animation-name:btn;
-}
-
-@keyframes btn {
-    from {
-        bottom: -100px;
-    }
-    to {
-        bottom: 0px;
-    }
+    
 }
 
 .btn-sendmail{
@@ -301,7 +353,7 @@ SECCION 1 - INICIO
     padding:10px 15px;
     border: 1px solid rgb(0, 179, 255);
     border-radius:10px;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     background-color: rgba(0, 149, 255, 0.757);
     text-decoration: none;
     position: relative;
@@ -310,10 +362,11 @@ SECCION 1 - INICIO
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .icon-btn{
-    width: 20px;
+    width: 17px;
     margin-right:10px;
 }
 
@@ -339,7 +392,7 @@ SECCION 1 - INICIO
 .content-section-one{
     width: 100%;
     height: 410px;
-    margin-top:130px;
+    margin-top:100px;
     color: white;
     text-align: center;
     display: flex;
@@ -382,27 +435,31 @@ SECCION 1 - INICIO
     border-radius: 5px;
     padding: 4px 8px;
     margin-bottom: 30px;
+    font-family:ShareTech;
+    font-size:1.0rem;
 }
 
 .tittle-stage{
-    font-family: cute;
+    font-family:ShareTech;
     font-size:2.2rem;
-    width: 50%;
+    width: 60%;
     margin-bottom:30px;
+    line-height: 2.8rem;
 }
 
 .dscrp{
-    width: 60%;
+    width: 70%;
     margin-bottom: 40px;
     font-size:0.9rem;
     font-family:made;
     letter-spacing: 0.1rem;
+    line-height: 1rem;
 }
 
 .content-section-two{
     width: 100%;
     height: 650px;
-    margin-top:90px;
+    margin-top:100px;
     color: white;
     text-align: right;
     display: flex;
@@ -415,7 +472,7 @@ SECCION 1 - INICIO
     width: 100%;
     object-fit: cover;
     position: absolute;
-    top:-50px;
+    top:-100px;
 }
 
 .content-sec{
@@ -428,16 +485,12 @@ SECCION 1 - INICIO
 }
 
 .tittle-stage-two{
-    font-family: cute;
+    font-family:ShareTech;
     font-size:2.2rem;
-    width: 70%;
+    width: 80%;
     margin-bottom:30px;
     text-align:right;
-}
-
-.dscrp{
-    width: 60%;
-    margin-bottom: 30px;
+    line-height: 2.8rem;
 }
 
 .slider{
@@ -448,6 +501,7 @@ SECCION 1 - INICIO
     justify-content: start;
     overflow: auto;
     position: relative;
+    margin-top: 15px;
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -455,7 +509,7 @@ SECCION 1 - INICIO
 .btn-section-two{
     position: absolute;
     left: 35px;
-    top: 620px;
+    top: 680px;
     text-decoration: none;
     color: white;
     padding:10px 25px;
@@ -471,7 +525,7 @@ SECCION 1 - INICIO
 
 .box-item{
     height: 280px;
-    min-width: 260px;
+    min-width: 300px;
     margin-left: 35px;
     display:flex;
     flex-direction: column;
@@ -484,19 +538,22 @@ SECCION 1 - INICIO
     font-size:1.9rem;
     text-align: left;
     margin-bottom: 10px;
-    font-family: cute;
+    font-family:ShareTech;
+    border-right:1px solid rgb(0, 59, 152);
+    width:80%;
 }
 
 .text-item{
-    font-size:0.9rem;
+    font-size:0.8rem;
     width:70%;
     font-family:made;
     letter-spacing: 0.1rem;
+    line-height: 1.2rem;
 }
 
 .item-image{
     height:110px;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     position:relative;
     animation:4s infinite linear;
     animation-name:icon;
@@ -521,9 +578,19 @@ SECCION 1 - INICIO
 .content-section-tre{
     width: 100%;
     height:550px;
-    margin-top:100px;
+    margin-top:190px;
     color: white;
     position: relative;
+}
+
+.dscrpi{
+    width: 70%;
+    margin-bottom: 40px;
+    font-size:0.9rem;
+    font-family:made;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    text-align: right;
 }
 
 .bg-tre{
@@ -548,7 +615,7 @@ SECCION 1 - INICIO
 .over-brands{
     width: 100%;
     height: 270px;
-    margin-top:50px;
+    margin-top:30px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -567,7 +634,7 @@ SECCION 1 - INICIO
 .content-section-four{
     width: 100%;
     height: 400px;
-    margin-top:60px;
+    margin-top:160px;
     border-radius: 30px;
     color: white;
     text-align: center;
@@ -594,9 +661,9 @@ SECCION 1 - INICIO
 }
 
 .title-sec{
-    font-family:cute;
+    font-family:ShareTech;
     font-size:2.4rem;
-    width: 60%;
+    width: 70%;
     margin-bottom: 20px;
 }
 
