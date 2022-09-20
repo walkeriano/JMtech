@@ -69,7 +69,7 @@ SECCION 1 - INICIO
 
 .header-flex{
     width:100%;
-    height:90vh;
+    height:93vh;
     display:flex;
     flex-direction: column;
     align-items:center;
@@ -77,10 +77,145 @@ SECCION 1 - INICIO
     position: relative;
 }
 
+.rocks{
+    position: absolute;
+    z-index: 1;
+    animation: 5s;
+    animation-name: boxrocks;
+    opacity: 1;
+}
+
+@keyframes boxrocks {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.rock{
+    position: relative;
+    width: 70px;
+    right:90px;
+    top:-40px;
+    animation: 7s infinite linear;
+    animation-name: rocka;
+    display: block;
+}
+
+@keyframes rocka {
+    0% {
+        top:-40px;
+        transform: rotate(0deg)
+    }
+
+    50% {
+        top:-60px;
+        transform: rotate(-30deg)
+    }
+
+    100% {
+        top:-40px;
+        transform: rotate(0deg)
+    }
+}
+
+.rockto{
+    position: relative;
+    width: 80px;
+    left:100px;
+    top: -130px;
+    display: block;
+    animation: 7s infinite linear;
+    animation-name: rockto;
+}
+
+@keyframes rockto {
+    0% {
+        top: -130px;
+        transform: rotate(0deg)
+    }
+
+    50% {
+        top: -100px;
+        transform: rotate(30deg)
+    }
+
+    100% {
+        top: -130px;
+        transform: rotate(0deg)
+    }
+}
+
+.rocktre{
+    position: relative;
+    width: 50px;
+    right:90px;
+    top: 40px;
+    display: block;
+    animation:7s infinite linear;
+    animation-name:rocktre;
+    transform: rotate(180deg)
+}
+
+@keyframes rocktre {
+    0% {
+        top: 40px;
+        transform: rotate(180deg)
+    }
+
+    50% {
+        top: 60px;
+        transform: rotate(150deg)
+    }
+
+    100% {
+        top: 40px;
+        transform: rotate(180deg)
+    }
+}
+
+.rockfur{
+    position: relative;
+    width: 50px;
+    left:120px;
+    top: 20px;
+    display: block;
+    animation:7s infinite linear;
+    animation-name:rockfur;
+    transform: rotate(50deg)
+}
+
+@keyframes rockfur {
+    0% {
+        top: 20px;
+        transform: rotate(50deg)
+    }
+
+    50% {
+        top:0px;
+        transform: rotate(90deg)
+    }
+
+    100% {
+        top: 20px;
+        transform: rotate(50deg)
+    }
+}
+
+
+
 .bg-banner{
     position:absolute;
     width:100%;
-    height:90vh;
+    height:93vh;
     object-fit: cover;
 }
 
@@ -125,35 +260,31 @@ SECCION 1 - INICIO
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    top:-30px;
 }
 
 .text h1 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family:cute;
     font-size: 2.7rem;
     width: 70%;
 }
 
 .text h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 50%;
     font-family:made;
     letter-spacing: 0.1rem;
 }
 
-.btn-sendmail{
-    color: white;
-    padding:10px 25px;
-    border: 1px solid rgb(0, 179, 255);
-    border-radius:10px;
-    font-size: 1.0rem;
-    background-color: rgba(0, 149, 255, 0.757);
-    text-decoration: none;
+.logos-hed{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
     animation:2s 3s;
     animation-name:btn;
-    font-family:made;
-    letter-spacing: 0.1rem;
 }
 
 @keyframes btn {
@@ -164,6 +295,46 @@ SECCION 1 - INICIO
         bottom: 0px;
     }
 }
+
+.btn-sendmail{
+    color: white;
+    padding:10px 15px;
+    border: 1px solid rgb(0, 179, 255);
+    border-radius:10px;
+    font-size: 1.0rem;
+    background-color: rgba(0, 149, 255, 0.757);
+    text-decoration: none;
+    position: relative;
+    font-family:made;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn{
+    width: 20px;
+    margin-right:10px;
+}
+
+.butons-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top:15px;
+}
+
+.icon-hed{  
+    width:15px;
+    margin-right: 30px;
+}
+
+.icon-hed-tu{  
+    width:23px;
+}
+
+
 
 .content-section-one{
     width: 100%;
