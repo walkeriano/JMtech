@@ -470,9 +470,10 @@ SECCION 1 - INICIO
 
 .bg-sectwo{
     width: 100%;
+    height:780px;
     object-fit: cover;
     position: absolute;
-    top:-100px;
+    top:-180px;
 }
 
 .content-sec{
@@ -485,6 +486,15 @@ SECCION 1 - INICIO
 }
 
 .tittle-stage-two{
+    font-family:ShareTech;
+    font-size:2.2rem;
+    width: 80%;
+    margin-bottom:30px;
+    text-align:right;
+    line-height: 2.8rem;
+}
+
+.tittle-stage-tre{
     font-family:ShareTech;
     font-size:2.2rem;
     width: 80%;
@@ -606,7 +616,7 @@ SECCION 1 - INICIO
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    margin-right: 35px;
+    margin-right: 40px;
     position:relative;
 }
 
@@ -850,11 +860,11 @@ SECCION 1 - INICIO
     
     .header-home{
         width:95%;
-        margin-top:50px;
+        margin-top:30px;
     }
 
     .logo{
-        width: 125px;
+        width: 160px;
         margin-left: 25px;
     }
     
@@ -874,7 +884,7 @@ SECCION 1 - INICIO
     }
 
     .logos-hed{
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         justify-content:space-between;
         width:90%;
@@ -909,8 +919,8 @@ SECCION 1 - INICIO
     }
 
     .bg-sectwo{
-        max-width: 40%;
-        top:-170px;
+        max-width: 100%;
+        top:-235px;
         right:0px;
     }
     
@@ -919,6 +929,13 @@ SECCION 1 - INICIO
         width: 55%;
         line-height: 3.5rem;
     }
+
+    .tittle-stage-tre{
+        font-size:3.2rem;
+        width: 100%;
+        line-height: 3.5rem;
+        text-align: center;
+    }
     
     .slider{
         justify-content: center;
@@ -926,7 +943,7 @@ SECCION 1 - INICIO
     }
     
     .btn-section-two{
-        left: 155px;
+        left: 45%;
     }
 
     .box-item{
@@ -955,6 +972,77 @@ SECCION 1 - INICIO
     
     .item-image{
         height:130px;
+    }
+
+    .content-section-tre{
+        height:650px;
+        margin-top:350px;
+    }
+
+    
+
+    .bg-tre{
+        width: 100%;
+        height:750px;
+        margin-top:-145px;
+    }
+    
+    .dscrpi{
+        text-align: center;
+    }
+    
+    
+    .infosect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .over-brands{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .brand-image{
+        max-width: 530px;
+        margin:0px 35px;
+    }
+
+    .content-section-four{
+        width: 100%;
+        height: 500px;
+        margin-top:50px;
+    }
+    
+    .bg-contact{
+        width: 85%;
+        height: 450px;
+    }
+    
+    .title-sec{
+        font-size:2.9rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .text-sec{
+        margin-bottom:0px;
+        font-size: 1.3rem;
+    }
+    
+    .form{
+        width:100%;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+    
+    .footer-logos{
+        margin-top:45px;
+        width:30%;
     }
 
 }
