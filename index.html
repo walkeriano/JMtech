@@ -38,16 +38,33 @@
               alt="Hombre_sonriendo"
             />
           </a>
-          <a class="burger">
-            <lottie-player
-              src="https://assets1.lottiefiles.com/packages/lf20_fcnhjx1o.json"
-              background="transparent"
-              speed="1.0"
-              style="width:40px"
-              loop
-              autoplay
-            ></lottie-player>
-          </a>
+          <div class="container" >  
+              <div class="burger"> 
+                <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_fcnhjx1o.json"
+                background="transparent"
+                speed="1.0"
+                style="width:35px"
+                loop
+                autoplay
+              ></lottie-player>
+              </div>
+              <p class="titulo-main" >Main</p>
+              <ul class="ul-main" >
+                <li>
+                  <a href="#one" >More Of Us</a>
+                </li>
+                <li>
+                  <a href="#two">Our Services</a>
+                </li>
+                <li>
+                  <a href="#tre">Past Projects</a>
+                </li>
+                <li>
+                  <a href="#for">Contact Us</a>
+                </li>
+              </ul>
+          </div>
         </nav>
         <div class="text">
           <div class="rocks">
@@ -71,14 +88,14 @@
             <p>Send mail</p>
           </a>
           <div class="butons-redes">
-            <a href="https://www.instagram.com/estaciondelser.oficial/?hl=es-la">
+            <a href="https://instagram.com/jm_tech_services?igshid=YmMyMTA2M2Y=">
               <img
                 class="icon-hed"
                 src="./img/icon-fb.svg"
                 alt="Hombre_sonriendo"
               />
             </a>
-            <a href="https://www.instagram.com/estaciondelser.oficial/?hl=es-la">
+            <a href="https://instagram.com/jm_tech_services?igshid=YmMyMTA2M2Y=">
               <img
                 class="icon-hed-tu"
                 src="./img/icon-inst.svg"
@@ -89,7 +106,7 @@
         </div>
       </header>
       <main>
-        <section class="content-section-one">
+        <section id="one" class="content-section-one">
           <img class="bg-one" src="./img/portada-edit-2.png" alt="item" />
           <div class="info">
             <p class="stage">More Of Us</p>
@@ -98,7 +115,7 @@
               We merge technology and design to reflect the personality of your brand from an innovative perspective.</p>
           </div>
         </section>
-        <section class="content-section-two">
+        <section id="two" class="content-section-two">
           <img
             class="bg-sectwo"
             src="./img/portada-edit-3.jpg"
@@ -128,14 +145,14 @@
               <p class="text-item">Find new customers and amplify your reach on social networks.</p>
             </div>
           </section>
-          <a class="btn-section-two"  href="tel:+51993861374" >Build</a>
+          <a class="btn-section-two"  href="tel:+12017049006" >Build</a>
         </section>
-        <section class="content-section-tre">
+        <section id="tre" class="content-section-tre">
           <img class="bg-tre" src="./img/portada-edit-4.jpg" alt="item" />
           <div class="infosect">
             <p class="stage">Past Projects</p>
             <h3 class="tittle-stage-tre">Digital Transformation</h3>
-            <p class="dscrpi">Find new customers and amplify your reach on social networks.</p>
+            <p class="dscrpi">Clients who entrusted us with their evolution in the digital world.</p>
           </div>
           <section class="over-brands">
             <a href="https://clinicasanclemente.com/">
@@ -146,18 +163,21 @@
             </a>
           </section>
         </section>
-        <section class="content-section-four">
+        <section id="for" class="content-section-four">
           <img class="bg-contact" src="./img/portada-edit.jpg" alt="item" />
           <div class="tie">
             <h3 class="title-sec">Contact Us Easily</h3>
             <p class="text-sec">Build the future of your bussines</p>
-            <form>
+            <form action="https://formsubmit.co/awalkerbarreda@gmail.com" method="POST" >
               <input
                 class="form"
-                type="email"
+                name="email"
                 placeholder="Type your e-mail"
+                required
               />
-              <button class="btn-sub" type="submit">Get in touch</button>
+              <button class="btn-sub" name="submit"  type="submit">Send</button>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
             </form>
           </div>
         </section>
@@ -171,7 +191,7 @@
           />
         </a>
         <div class="footer-logos">
-          <a  href="tel:+51993861374">
+          <a  href="tel:+12017049006">
             <img
               class="icon-fut"
               src="./img/icon-call.svg"
@@ -185,14 +205,14 @@
               alt="Hombre_sonriendo"
             />
           </a>
-          <a href="https://www.instagram.com/estaciondelser.oficial/?hl=es-la">
+          <a href="https://instagram.com/jm_tech_services?igshid=YmMyMTA2M2Y=">
             <img
               class="icon-fut"
               src="./img/icon-fb.svg"
               alt="Hombre_sonriendo"
             />
           </a>
-          <a href="https://www.instagram.com/estaciondelser.oficial/?hl=es-la">
+          <a href="https://instagram.com/jm_tech_services?igshid=YmMyMTA2M2Y=">
             <img
               class="icon-fut"
               src="./img/icon-inst.svg"

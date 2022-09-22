@@ -33,6 +33,100 @@ GLOBALES
 }
 
 
+.container{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    height:120px;
+    transition: 1.5s ease;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    z-index: 10;
+    animation: 8s;
+    animation-name: boxrocks;
+}
+
+.burger{
+    transition: 3s all;
+    position: relative;
+    right: 40px;
+}
+
+.titulo-main{
+    color: white;
+    font-family: ShareTech;
+    font-size: 1.0rem;
+    margin-bottom:50px;
+    margin-right: 30px;
+    border-bottom: 1px solid white;
+    transition: 1.8s ease;
+    display: none;
+}
+
+
+.ul-main{
+    color:white;
+    width:100%;
+    text-align: right;
+    display: none;
+}
+
+.ul-main li{
+    display: block;
+}
+
+.ul-main li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: made;
+    font-size: 1.2rem;
+    margin-bottom:30px;
+    margin-right: 30px;
+    border-bottom:1px solid rgba(255, 255, 255, 0);
+    position: relative;
+    right: 0px;
+    animation: 1s;
+    animation-name: a;
+}
+
+@keyframes a {
+    0% {
+        right: -350px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+.container:hover{
+    width: 50%;
+    height:100vh;
+    background-color: black;
+}
+
+.container:hover .ul-main{
+    display: block;
+}
+
+.container:hover .burger{
+    display: none;
+}
+
+.container:hover .titulo-main{
+    display: block;
+}
+
+.container:hover .ul-main li a:hover{
+    border-bottom:1px solid white;
+}
+
+
+
+
 
 /*
 SECCION 1 - INICIO
@@ -302,16 +396,9 @@ SECCION 1 - INICIO
 
 .logo{
     width: 125px;
-    margin-left: 25px;
+    margin-left: 35px;
+    margin-top: 30px;
 }
-
-
-
-.burger{
-    margin-right: 30px;
-}
-
-
 
 
 .text{
@@ -391,7 +478,7 @@ SECCION 1 - INICIO
 
 .content-section-one{
     width: 100%;
-    height: 410px;
+    height: 610px;
     margin-top:100px;
     color: white;
     text-align: center;
@@ -776,7 +863,15 @@ SECCION 1 - INICIO
     width: 25px;
 }
 
+
+
+
 @media screen and (min-width:600px){
+
+    .container:hover{
+        width: 20%;
+    }
+
     .rockotin{
         width: 125px;
         right:315px;
