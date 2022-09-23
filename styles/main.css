@@ -37,8 +37,7 @@ GLOBALES
     position: absolute;
     right: 0px;
     top: 0px;
-    width: 120px;
-    height:120px;
+    width: 50%;
     transition: 1.5s ease;
     display:flex;
     flex-direction: column;
@@ -49,83 +48,79 @@ GLOBALES
     animation-name: boxrocks;
 }
 
-.burger{
-    transition: 3s all;
-    position: relative;
-    right: 40px;
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.titulo-main{
+label {
+    background-color: rgba(0, 0, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    display:block;
     color: white;
-    font-family: ShareTech;
-    font-size: 1.0rem;
-    margin-bottom:50px;
-    margin-right: 30px;
-    border-bottom: 1px solid white;
-    transition: 1.8s ease;
+    z-index: 1;
+}
+
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top:20px;
+}
+
+#menu-toggle {
     display: none;
 }
 
-
-.ul-main{
-    color:white;
-    width:100%;
-    text-align: right;
-    display: none;
+#menu {
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+    max-height: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    transition: 2s all;
 }
 
-.ul-main li{
+#menu ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+}
+
+#menu li{
     display: block;
 }
 
-.ul-main li a{
+#menu a{
     display: block;
     text-decoration: none;
     color: white;
+    padding:20px 30px;
     font-family: made;
-    font-size: 1.2rem;
-    margin-bottom:30px;
-    margin-right: 30px;
-    border-bottom:1px solid rgba(255, 255, 255, 0);
-    position: relative;
-    right: 0px;
-    animation: 1s;
-    animation-name: a;
+    font-size:1.2rem;
+    transition: 2s all;
 }
 
-@keyframes a {
-    0% {
-        right: -350px;
-    }
-    100% {
-        right: 0px;
-    }
+#menu-toggle:checked + #menu {
+    display:block;
+    max-height: 100vh;
 }
-
-.container:hover{
-    width: 50%;
-    height:100vh;
-    background-color: black;
-}
-
-.container:hover .ul-main{
-    display: block;
-}
-
-.container:hover .burger{
-    display: none;
-}
-
-.container:hover .titulo-main{
-    display: block;
-}
-
-.container:hover .ul-main li a:hover{
-    border-bottom:1px solid white;
-}
-
-
-
 
 
 /*
@@ -868,8 +863,8 @@ SECCION 1 - INICIO
 
 @media screen and (min-width:600px){
 
-    .container:hover{
-        width: 20%;
+    .container{
+        max-width: 20%;
     }
 
     .rockotin{
@@ -987,7 +982,7 @@ SECCION 1 - INICIO
 
     .content-section-one{
         width: 100%;
-        height: 710px;
+        height: 830px;
     }
     
     .bg-one{
